@@ -1,0 +1,22 @@
+{
+  "name": "discord-community-tools-bot",
+  "version": "1.1.0",
+  "private": true,
+  "description": "A simple multi-server Discord bot for verification, tributes, tickets, sticky notes, and wheels.",
+  "type": "module",
+  "engines": {
+    "node": ">=24.10.0"
+  },
+  "scripts": {
+    "start": "node src/index.js",
+    "test": "node --test",
+    "check": "node --check src/index.js && node --check src/commands.js && node --check src/database.js && node --check src/database-path.js && node --check src/interaction-utils.js && node --check src/reaction-wheel.js && node --check src/ticket-service.js && node --check src/tribute-utils.js && node --check src/wheel-presets.js && node --check src/wheel-renderer.js"
+  },
+  "dependencies": {
+    "@napi-rs/canvas": "1.0.3",
+    "dejavu-fonts-ttf": "2.37.3",
+    "discord.js": "14.27.0",
+    "dotenv": "17.4.2",
+    "gifenc": "1.0.3"
+  }
+}
